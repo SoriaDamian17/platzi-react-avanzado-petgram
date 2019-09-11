@@ -45,3 +45,22 @@ fuente: [https://www.styled-components.com]https://www.styled-components.com
 Incluya iconos populares en sus proyectos React fácilmente con react-icons, que utiliza importaciones ES6 que le permiten incluir solo los iconos que su proyecto está utilizando.
 
 Fuente: [https://react-icons.netlify.com/#/]https://react-icons.netlify.com/#/
+
+# Apollo Boost
+
+¡La forma más rápida y fácil de comenzar con Apollo Client!
+
+Apollo Boost es una forma de configuración cero para comenzar a usar Apollo Client. Incluye algunos valores predeterminados razonables, como nuestro InMemoryCache y HttpLink recomendados, que vienen configurados para usted con nuestra configuración recomendada.
+
+Fuente: [https://www.apollographql.com/docs/react/advanced/boost-migration/]https://www.apollographql.com/docs/react/advanced/boost-migration/
+
+# React Apollo
+React Apollo le permite obtener datos de su servidor GraphQL y usarlos en la creación de interfaces de usuario complejas y reactivas utilizando el marco React. React Apollo puede usarse en cualquier contexto que React pueda usarse. En el navegador, en React Native, o en Node.js cuando desea hacer la representación del lado del servidor.
+
+Fuente: [https://github.com/apollographql/react-apollo]https://github.com/apollographql/react-apollo
+
+# GraphQl
+
+GraphQL es un lenguaje de consulta para API y un tiempo de ejecución para completar esas consultas con sus datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos en su API, brinda a los clientes el poder de pedir exactamente lo que necesitan y nada más, facilita la evolución de las API a lo largo del tiempo y permite poderosas herramientas para desarrolladores.
+
+Fuente: [https://graphql.org]https://graphql.org
