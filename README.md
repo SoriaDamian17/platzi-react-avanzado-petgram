@@ -46,6 +46,11 @@ Incluya iconos populares en sus proyectos React fácilmente con react-icons, que
 
 Fuente: [https://react-icons.netlify.com/#/]https://react-icons.netlify.com/#/
 
+# Reach Router
+
+Router gestiona el enfoque de su aplicación en las transiciones de ruta. No hay nada que tengas que hacer al respecto, simplemente sucede.
+
+Fuente: [https://reach.tech/router]https://reach.tech/router
 # Apollo Boost
 
 ¡La forma más rápida y fácil de comenzar con Apollo Client!
