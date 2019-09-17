@@ -1,5 +1,7 @@
 import React from 'react';
+import { Layout } from '../components/Layout';
 
-export const Favs = () => (
-    <h1>Favs</h1>
+export default () => (
+    <Layout title='Tus Favoritos'>
+    </Layout>
 )

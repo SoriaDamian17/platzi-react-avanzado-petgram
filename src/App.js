@@ -1,43 +1,37 @@
-import React, { Fragment } from 'react';
+import React, { Suspense, useContext } from 'react';
 import { GlobalStyle } from './styles/GlobalStyles';
 import { Logo } from './components/Logo';
 import { Home } from './pages/Home';
-import { Router } from '@reach/router'
-import { Detail } from './pages/Detail';
+import { Router, Redirect } from '@reach/router'
 import { NavBar } from './components/NavBar';
-import { Favs } from './pages/Favs';
 import { User } from './pages/User';
 import { NoRegisteredUser } from './pages/NoRegisteredUser';
-const UserLogged = ({ children }) => {
-    return children({ isAuth: false });
-}
+import { NotFound } from './pages/NotFound';
+import { Context } from './Context';
+
+const Favs = React.lazy(() =>  import('./pages/Favs') )
+const Detail = React.lazy(() =>  import('./pages/Detail') )
 
 export const App = () => {
+    //const {isAuth} = useContext( Context );
+    const isAuth = false;
     return (
-        <Fragment>
+        <Suspense fallback={<div />}>
             <GlobalStyle />
             <Logo />
             <Router>
+                <NotFound default />
                 <Home path='/' />
                 <Home path='/pet/:id' />
-                <Detail path='/detail/:detailId' />
+                <Detail path='/detail/:detailId' /> 
+                {!isAuth && <NoRegisteredUser path='/login' /> }
+                {!isAuth && <Redirect from='/favs' to='/login' />}
+                {!isAuth && <Redirect from='/user' to='/login' />}
+                {isAuth && <Redirect from='/login' to='/' />}
+                <Favs path='/favs' />
+                <User path='/user' />
             </Router>
-            <UserLogged>
-                {
-                    ({ isAuth }) =>
-                    isAuth ?
-                    <Router>
-                        <Favs path='/favs' />
-                        <User path='/user' />
-                    </Router>
-                    : <Router>
-                        <NoRegisteredUser path='/favs'/>
-                        <NoRegisteredUser path='/user'/>
-                    </Router>
-                }
-                
-            </UserLogged>
             <NavBar />
-        </Fragment>
+        </Suspense>
     )
 };

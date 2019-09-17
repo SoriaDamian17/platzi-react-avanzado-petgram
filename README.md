@@ -69,3 +69,10 @@ Fuente: [https://github.com/apollographql/react-apollo]https://github.com/apollo
 GraphQL es un lenguaje de consulta para API y un tiempo de ejecución para completar esas consultas con sus datos existentes. GraphQL proporciona una descripción completa y comprensible de los datos en su API, brinda a los clientes el poder de pedir exactamente lo que necesitan y nada más, facilita la evolución de las API a lo largo del tiempo y permite poderosas herramientas para desarrolladores.
 
 Fuente: [https://graphql.org]https://graphql.org
+
+# React Helmet
+Este componente React reutilizable administrará todos sus cambios en el encabezado del documento.
+
+Helmet toma etiquetas HTML simples y genera etiquetas HTML simples. Es muy simple, y reacciona amigable para principiantes.
+
+Fuente: https://github.com/nfl/react-helmet
